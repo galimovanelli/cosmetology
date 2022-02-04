@@ -110,7 +110,6 @@ li.first:before {
 
 ul.your-skills__ul.second,
 .teachers__ul {
-    /* list-style-type: none; */
     list-style-type: "\00B7";
     margin: 39px 0 0 0;
 }
@@ -161,7 +160,6 @@ li.your-skills__li.first.text-head-2 {
 }
 
 .why-us__wrap_col>.why-us__col.left {
-    /* width: 50%; */
     display: flex;
 }
 
@@ -320,36 +318,24 @@ body {
 }
 
 .prev {
-    /* background-image: url("https://eduexp.ru/wp-content/uploads/2022/02/array_prev.png")!important;
-    background-size: cover; */
-    /* content: url("https://eduexp.ru/wp-content/uploads/2022/02/array_prev.png"); */
     width: 45px;
     height: 45px;
     border-radius: 50%;
     position: absolute;
-    /* left: 45%; */
     top: 100%;
-    /* background-color: violet; */
     background: linear-gradient(257.32deg, #6E636E 9.39%, rgba(21, 20, 20, 0.78) 48.07%, #716571 85.62%)!important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
     right: 45%;
 }
 
 .next {
-    /* background-image: url("https://eduexp.ru/wp-content/uploads/2022/02/array_next.png")!important;
-    background-size: cover; */
-    /* content: url("https://eduexp.ru/wp-content/uploads/2022/02/array_next.png"); */
     width: 45px;
     height: 45px;
     border-radius: 50%;
     position: absolute;
-    /* right: 45%; */
     top: 100%;
-    /* background-color: violet; */
     background: linear-gradient(257.32deg, #6E636E 9.39%, rgba(21, 20, 20, 0.78) 48.07%, #716571 85.62%)!important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
     left: 45%;
 }
 
@@ -368,11 +354,6 @@ body {
 .owl-dots {
     display: none;
 }
-
-
-/* .active {
-    background: transparent!important;
-} */
 
 .owl-carousel .item {
     background: none;
