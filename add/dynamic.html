@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bloc-grey {
+            background: linear-gradient(90.08deg, #F6F2F6 0.1%, rgba(237, 236, 237, 0.496507) 50.38%, #F6F2F6 99.97%);
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+            border-radius: 30px;
+        }
+        
+        .why-us__head.text-head-1 {
+            margin: 100px 0 73px 0;
+        }
+        
+        .why-us__bloc {
+            padding: 25px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 247px;
+            margin: 0 23px 25px 0;
+            width: 204px;
+            border: none;
+        }
+        
+        .why-us__wrap_col>.why-us__col.left {
+            width: 50%;
+            display: flex;
+        }
+        
+        .why-us__col>.why-us__col.left {
+            width: 50%;
+        }
+        
+        .why-us__text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #3F3A3A;
+        }
+        
+        .why-us__wrap_col {
+            display: flex;
+        }
+        
+        .active {
+            background: linear-gradient(90.08deg, #2D2B2D 0.1%, rgba(55, 51, 55, 0.83) 50.38%, #282328 99.97%);
+            color: #FFFFFF;
+        }
+        
+        .why-us__wrap_col>.why-us__col.right {
+            padding: 0 0 0 88px;
+        }
+        
+        .why-us__text {
+            margin: 34px 0 34px 0;
+        }
+        
+        .why-us__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration-line: underline;
+            color: #3F3A3A;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="why-us">
+        <div class="why-us__wrap">
+            <div class="why-us__head text-head-1">Почему стоит обучаться именно у нас?</div>
+            <div class="why-us__wrap_col">
+                <div class="why-us__col left">
+                    <div class="why-us__col left">
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_1" onClick="ContentChange(value)">Реальная практика</button>
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_2" onClick="ContentChange(value)">Современное оборудование</button>
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_3" onClick="ContentChange(value)">Опытные преподаватели</button>
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_4" onClick="ContentChange(value)">Форма обучения</button>
+                    </div>
+                    <div class="why-us__col right">
+                        <button class="why-us__bloc bloc-grey text-head-2 active" value="btn_5" onClick="ContentChange(value)">Диплом установленного государственного образца</button>
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_6" onClick="ContentChange(value)">Неограниченный доступ к материалам</button>
+                        <button class="why-us__bloc bloc-grey text-head-2" value="btn_7" onClick="ContentChange(value)">Актуальность профессии</button>
+                    </div>
+                </div>
+
+                <!-- скрытое -->
+                <div id="btn_1" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Реальная практика</div>
+                        <div class="why-us__text">
+                            Практические занятия – важнейшая часть нашего учебного процесса. Практика составляет 463 аккредитованных часа. Обучение проходит в практикующих косметологических клиниках.
+                        </div>
+                    </div>
+                </div>
+                <div id="btn_2" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Современное оборудование</div>
+                        <div class="why-us__text">
+                            В наших классах только современное и качественное косметологическое оборудование, с помощью которого можно проводить: лазерную терапию, фототерапию, вапоризацию, вакуумную чистку, ультразвуковую чистку, микротоковые воздействия.
+                        </div>
+                    </div>
+                </div>
+                <div id="btn_3" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Опытные преподаватели</div>
+                        <div class="why-us__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus maiores ipsam, quidem, libero nesciunt facere quisquam saepe tempore consequuntur voluptatem totam consequatur, nam odit autem! Ut quo repudiandae eaque.
+                        </div>
+                    </div>
+                </div>
+                <div id="btn_4" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Форма обучения</div>
+                        <div class="why-us__text">
+                            Форма обучения – очно-заочная, с применением дистанционных образовательных технологий
+                        </div>
+                    </div>
+                </div>
+                <div id="btn_5" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Диплом установленного государственного образца</div>
+                        <div class="why-us__text">
+                            Лицензии на право ведения образовательной и медицинской деятельности выданные учебному центру Министерством здравоохранения и Министерством образования, позволяют после выпуска выдавать нашим ученикам дипломы, свидетельства, сертификаты установленного
+                            гос.образца о дополнительном образовании и дополнительном профессиональном образовании.
+                        </div>
+                        <p class="why-us__link">
+                            Смотреть образец
+                        </p>
+                    </div>
+                </div>
+                <div id="btn_6" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Неограниченный доступ к материалам</div>
+                        <div class="why-us__text">
+                            Легкоусваиваемый теоретический курс врачебной косметологии, сопровождаемый разъяснительными материалами. Неограниченный по времени доступ к обучающим материалам.
+                        </div>
+                    </div>
+                </div>
+                <div id="btn_7" style="display: none">
+                    <div class="why-us__bloc_info">
+                        <div class="text-head-2">Актуальность профессии</div>
+                        <div class="why-us__text">
+                            Наши курсы включают самые востребованные программы на рынке красоты в данный момент. Мы постоянно развиваемся и знаем, что сейчас популярно и актуально.
+                        </div>
+                    </div>
+                </div>
+                <!-- скрытое -->
+
+                <div class="why-us__col right">
+                    <div id="why-us__content">
+                        <div class="why-us__bloc_info">
+                            <div class="text-head-2">Диплом установленного государственного образца</div>
+                            <div class="why-us__text">
+                                Лицензии на право ведения образовательной и медицинской деятельности выданные учебному центру Министерством здравоохранения и Министерством образования, позволяют после выпуска выдавать нашим ученикам дипломы, свидетельства, сертификаты установленного
+                                гос.образца о дополнительном образовании и дополнительном профессиональном образовании.
+                            </div>
+                            <p class="why-us__link">
+                                Смотреть образец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    function ContentChange(BtnNumber) {
+        let content = document.getElementById('why-us__content');
+        content.innerHTML = document.getElementById(BtnNumber).innerHTML;
+    }
+
+    let citys = document.getElementsByClassName("why-us__bloc");
+    for (let i = 0; i < citys.length; i++) {
+        citys[i].addEventListener("click", function() {
+            let current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+</html>
