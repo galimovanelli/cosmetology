@@ -3,6 +3,11 @@ body {
     font-family: Montserrat;
 }
 
+.wrap {
+    margin: auto;
+    width: 960px;
+}
+
 .top__wrap {
     display: flex;
     justify-content: center;
