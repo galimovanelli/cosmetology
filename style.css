@@ -142,6 +142,10 @@ li.your-skills__li.second,
 .your-skills__wrap_col {
     display: flex;
     justify-content: space-between;
+    background-image: url(https://eduexp.ru/wp-content/uploads/2022/02/clouds1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .your-skills__col {
@@ -423,6 +427,13 @@ body {
     justify-content: space-between;
 }
 
+.inst__wrap {
+    background-image: url(https://eduexp.ru/wp-content/uploads/2022/02/clouds2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .inst__text {
     font-style: normal;
     font-weight: 500;
@@ -443,6 +454,7 @@ body {
 
 img.inst__img {
     padding: 0 0 0 136px;
+    margin: 0 0 126px 0;
 }
 
 .inst__btn {
@@ -460,4 +472,9 @@ img.inst__img {
 .inst__head {
     margin: 132px auto 69px auto;
     width: 378px;
+}
+
+.text_bold {
+    font-style: normal;
+    font-weight: 600;
 }
