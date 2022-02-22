@@ -5,7 +5,7 @@ body {
 
 .wrap {
     margin: auto;
-    width: 960px;
+    max-width: 960px;
 }
 
 .top__wrap {
@@ -139,6 +139,10 @@ li.your-skills__li.second,
     padding: 0 0 0 10px;
 }
 
+li.your-skills__li.second {
+    margin: 23px 0 0 0;
+}
+
 .your-skills__wrap_col {
     display: flex;
     justify-content: space-between;
@@ -177,7 +181,7 @@ li.your-skills__li.first.text-head-2 {
     color: #3F3A3A;
 }
 
-.why-us__wrap_col>.why-us__col.left {
+.why-us__col_btns {
     display: flex;
 }
 
@@ -202,7 +206,7 @@ li.your-skills__li.first.text-head-2 {
     color: #FFFFFF;
 }
 
-.why-us__wrap_col>.why-us__col.right {
+.why-us__col_text {
     padding: 0 27px 0 88px;
 }
 
@@ -477,4 +481,139 @@ img.inst__img {
 .text_bold {
     font-style: normal;
     font-weight: 600;
+}
+
+.for-whom__img.diplom.mobile,
+.for-whom__img.doctor_1.mobile {
+    display: none;
+}
+
+.why-us__col_btns.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .text-normal {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .text-head-1 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .for-whom__head {
+        margin: 50px 0;
+    }
+    .for-whom__img.diplom,
+    .for-whom__img.doctor_1 {
+        display: none;
+    }
+    .for-whom__block {
+        width: 91%;
+        margin: auto;
+        margin: auto auto 15px auto;
+    }
+    .text-head-2 {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .for-whom__text>p {
+        font-size: 10px;
+        line-height: 14px;
+        margin: 0;
+    }
+    .for-whom__text {
+        padding: 35px 19px 42px 28px;
+    }
+    .for-whom__head-block {
+        margin: 0 0 14px 0;
+    }
+    .top__text {
+        width: auto;
+    }
+    .for-whom__text {
+        width: auto;
+    }
+    .for-whom__img.diplom.mobile {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0 0 25px 0;
+    }
+    .for-whom__img.diplom.mobile>img {
+        width: 100px;
+    }
+    .for-whom__img.doctor_1.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+        margin: 15px 0 0 0;
+    }
+    .for-whom__img.doctor_1.mobile>img {
+        width: 137px;
+    }
+    li.first:before {
+        content: url(https://eduexp.ru/wp-content/uploads/2022/02/goals_min.png);
+        position: relative;
+        left: -15px;
+        top: 20px;
+    }
+    li.your-skills__li.second {
+        font-size: 10px;
+        line-height: 18px;
+        margin: 17px 0 0 0;
+    }
+    .your-skills__col {
+        width: 100%;
+    }
+    .your-skills__wrap_col {
+        background-image: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-us__col_text {
+        display: none;
+    }
+    .class__line {
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-us__col_btns.mobile {
+        display: flex;
+    }
+    .why-us__col_btns.desctop {
+        display: none;
+    }
+    .why-us__wrap_col {
+        display: flex;
+        justify-content: center;
+        padding: 0 21px;
+    }
+    .why-us__head.text-head-1 {
+        margin: 41px 0 32px 0;
+    }
+    .why-us__bloc,
+    .why-us__bloc.active {
+        background: linear-gradient(90.08deg, #F6F2F6 0.1%, rgba(237, 236, 237, 0.496507) 50.38%, #F6F2F6 99.97%);
+        box-shadow: 0px 4px 9px rgb(0 0 0 / 5%);
+        border-radius: 30px;
+        font-size: 10px;
+        line-height: 13px;
+        color: #3F3A3A;
+        margin: 0 0 13px 0;
+    }
+    .why-us__bloc {
+        width: 100%;
+    }
+    .why-us__col.right,
+    .why-us__col.left {
+        width: 50%;
+    }
+    .why-us__col.left {
+        margin: 0 15px 0 0;
+    }
+    .class__head {
+        width: 100%;
+    }
 }
