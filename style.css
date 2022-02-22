@@ -616,4 +616,77 @@ img.inst__img {
     .class__head {
         width: 100%;
     }
+    /* Базовые стили слоя затемнения и модального окна  */
+    .why-us__overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        visibility: hidden;
+        /* фон затемнения */
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        position: fixed;
+        /* фиксированное поцизионирование */
+        transition: opacity .5s;
+    }
+    .why-us__overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    /*** Формируем стили модального окна ***/
+    .why-us__modal-window {
+        font-size: 14px;
+        z-index: 10;
+        visibility: hidden;
+        margin: auto;
+        width: 90%;
+        /* фиксированное позиционирование, окно стабильно при прокрутке */
+        position: fixed;
+        padding: 15px;
+        border: none;
+        opacity: 0;
+        transition: all ease .5s;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+        border-radius: 30px;
+        padding: 52px 58px 67px 48px;
+    }
+    /* активируем появление окна и затемнение фона */
+    .why-us__overlay:target+.why-us__modal-window {
+        top: 13%;
+        /* position: absolute; */
+        /* положение окна от верха страницы при появлении */
+        visibility: visible;
+        opacity: 1;
+    }
+    /* формируем кнопку закрытия */
+    .why-us__btn-close {
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    .why-us__btn-close:before {
+        color: #000;
+        content: "X";
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+        font-size: 20px;
+    }
+    .why-us__head_modal {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(21, 20, 20, 0.78);
+        margin: 0 0 17px 0;
+    }
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Врачебная косметология</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
@@ -80,11 +80,9 @@
                                 <li class="your-skills__li second">
                                     тактику лечебного и эстетического применения методов косметологической коррекции
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     показания и противопоказания для проведения методов коррекции эстетических недостатков
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     совместимость процедур косметологической коррекции с другими лечебными факторами (медикаментозная терапия и др)
                                 </li>
@@ -94,7 +92,6 @@
                                 <li class="your-skills__li second">
                                     обследование пациента по вопросам патологии кожи и эстетического состояния внешности
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     необходимые противоэпидемические мероприятия при выявлении инфекционного заболевания
                                 </li>
@@ -104,7 +101,6 @@
                                 <li class="your-skills__li second">
                                     и направлять в учреждение Роспотребнадзора экстренное извещение при выявлении инфекционного заболевания
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     и вести необходимую медицинскую документацию при проведении консультаций и косметологических процедур
                                 </li>
@@ -118,11 +114,9 @@
                                 <li class="your-skills__li second">
                                     косметологические процедуры (демакияж, чистка лица, массаж, косметические маски, пилинг, инъекционные техники и др.) для коррекции эстетических недостатков в зависимости от клинической ситуации
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     физиотерапевтические процедуры в программах косметологической коррекции
                                 </li>
-                                <!-- <br> -->
                                 <li class="your-skills__li second">
                                     удаление кожных новообразований
                                 </li>
@@ -132,7 +126,6 @@
                                 <li class="your-skills__li second">
                                     коррекцию курса процедур или замену другими методами косметологической коррекции
                                 </li>
-                                <!-- <br> -->
                             </ul>
 
                         </ul>
@@ -144,6 +137,7 @@
             <div class="why-us__wrap">
                 <h2 class="why-us__head text-head-1">Почему стоит обучаться именно у нас?</h2>
                 <div class="why-us__wrap_col">
+                    <!-- кнопки для десктопной версии -->
                     <div class="why-us__col_btns desctop">
                         <div class="why-us__col left">
                             <button class="why-us__bloc bloc-grey text-head-2" value="btn_1" onClick="ContentChange(value)">Реальная практика</button>
@@ -158,23 +152,83 @@
                         </div>
                     </div>
 
-
+                    <!-- кнопки для мобильной версии -->
                     <div class="why-us__col_btns mobile">
                         <div class="why-us__col left">
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_1" onClick="ContentChange(value)">Реальная практика</button>
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_2" onClick="ContentChange(value)">Современное оборудование</button>
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_3" onClick="ContentChange(value)">Опытные преподаватели</button>
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_4" onClick="ContentChange(value)">Форма обучения</button>
+                            <a class="why-us__link_modal" href="#win1">
+                                <button class="why-us__bloc bloc-grey text-head-2">Реальная практика</button>
+                            </a>
+                            <a class="why-us__link_modal" href="#win2">
+                                <button class="why-us__bloc bloc-grey text-head-2">Современное оборудование</button>
+                            </a>
+                            <a class="why-us__link_modal" href="#win3">
+                                <button class="why-us__bloc bloc-grey text-head-2">Опытные преподаватели</button>
+                            </a>
+                            <a class="why-us__link_modal" href="#win4">
+                                <button class="why-us__bloc bloc-grey text-head-2">Форма обучения</button>
+                            </a>
                         </div>
                         <div class="why-us__col right">
-                            <button class="why-us__bloc bloc-grey text-head-2 active" value="btn_5" onClick="ContentChange(value)">Диплом установленного государственного образца</button>
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_6" onClick="ContentChange(value)">Неограниченный доступ к материалам</button>
-                            <button class="why-us__bloc bloc-grey text-head-2" value="btn_7" onClick="ContentChange(value)">Актуальность профессии</button>
+                            <a class="why-us__link_modal" href="#win5">
+                                <button class="why-us__bloc bloc-grey text-head-2">Диплом установленного государственного образца</button>
+                            </a>
+                            <a class="why-us__link_modal" href="#win6">
+                                <button class="why-us__bloc bloc-grey text-head-2">Неограниченный доступ к материалам</button>
+                            </a>
+
+                            <a class="why-us__link_modal" href="#win7">
+                                <button class="why-us__bloc bloc-grey text-head-2">Актуальность профессии</button>
+                            </a>
+                        </div>
+                        <!-- Модальное окно №1 -->
+                        <a href="#x" class="why-us__overlay" id="win1"></a>
+                        <div class="why-us__modal-window">
+                            <div class="why-us__head_modal">Диплом установленного государственного образца</div>
+                            <div class="why-us__text">
+                                <span class="text_bold">Лицензии на право ведения образовательной и медицинской деятельности</span> выданные учебному центру Министерством здравоохранения и Министерством образования, позволяют после выпуска выдавать нашим
+                                ученикам дипломы, свидетельства, сертификаты установленного гос.образца о дополнительном образовании и дополнительном профессиональном образовании.
+                            </div>
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №2 -->
+                        <a href="#x" class="why-us__overlay" id="win2"></a>
+                        <div class="why-us__modal-window">
+                            Контент 2
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №3 -->
+                        <a href="#x" class="why-us__overlay" id="win3"></a>
+                        <div class="why-us__modal-window">
+                            Контент 3
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №4 -->
+                        <a href="#x" class="why-us__overlay" id="win4"></a>
+                        <div class="why-us__modal-window">
+                            Контент 4
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №5 -->
+                        <a href="#x" class="why-us__overlay" id="win5"></a>
+                        <div class="why-us__modal-window">
+                            Контент 5
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №6 -->
+                        <a href="#x" class="why-us__overlay" id="win6"></a>
+                        <div class="why-us__modal-window">
+                            Контент 6
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
+                        </div>
+                        <!-- Модальное окно №7 -->
+                        <a href="#x" class="why-us__overlay" id="win7"></a>
+                        <div class="why-us__modal-window">
+                            Контент 7
+                            <a class="why-us__btn-close" title="Закрыть" href="#close"></a>
                         </div>
                     </div>
 
-
-                    <!-- скрытое начало -->
+                    <!-- скрытое (начало) -->
                     <div id="btn_1" style="display: none">
                         <div class="why-us__bloc_info">
                             <div class="text-head-2">Реальная практика</div>
@@ -235,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- скрытое конец-->
+                    <!-- скрытое (конец)-->
 
                     <div class="why-us__col_text">
                         <div id="why-us__content">
@@ -383,6 +437,7 @@
 
 <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
 <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     if (document.documentElement.clientWidth > 768) {
         function ContentChange(BtnNumber) {
