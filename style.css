@@ -638,6 +638,10 @@ img.inst__img {
     margin: 30px 0 0 0;
 }
 
+a>.why-us__text {
+    text-decoration: underline;
+}
+
 
 /* #modal-box {
     border: 1px solid black;
@@ -1009,8 +1013,5 @@ img {
     .your-skills__wrap_col {
         width: 90%;
         margin: auto;
-    }
-    a .why-us__text {
-        text-decoration: underline;
     }
 }
