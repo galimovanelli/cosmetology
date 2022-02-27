@@ -224,93 +224,6 @@ li.your-skills__li.first.text-head-2 {
     color: #3F3A3A;
 }
 
-
-/* .teachers__head {
-    margin: 136px 0 73px;
-}
-
-.teachers__gallery-cell {
-    width: 100%;
-    height: 540px;
-    margin-right: 10px;
-    background: transparent;
-    counter-increment: teachers__gallery-cell;
-}
-
-.teachers__gallery-cell:before {
-    display: block;
-    text-align: center;
-    line-height: 200px;
-    font-size: 80px;
-    color: #000;
-}
-
-.owl-stage-outer {
-    background-image: url(https://eduexp.ru/wp-content/uploads/2022/02/bgr_for_teachers.png);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 537px;
-}
-
-.teachers__gallery {
-    background: transparent;
-}
-
-.teachers__block {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 30px;
-    width: 581px;
-    margin: 100px 0 107px 51px;
-}
-
-.teachers__head_bloc {
-    padding: 54px 0 39px 0;
-    margin: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
-    text-transform: capitalize;
-}
-
-.teachers__ul {
-    padding: 0 66px 52px 81px;
-    margin: 0;
-}
-
-.teachers__img.ekat {
-    margin-left: -84px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.teachers__gallery-cell.is-selected {
-    display: flex;
-    align-items: flex-end;
-}
-
-.teachers__block.second {
-    margin: 119px 52px 119px -27px;
-}
-
-.teachers__img.zulf {
-    z-index: 1;
-    align-self: self-end;
-}
-
-.owl-carousel .item {
-    height: 10rem;
-    background: #4DC7A0;
-    padding: 1rem;
-} */
-
-
-/* body {
-    padding: 10px;
-} */
-
 .owl-carousel .item {
     height: auto;
     background: transparent;
@@ -642,37 +555,6 @@ a>.why-us__text {
     text-decoration: underline;
 }
 
-
-/* #modal-box {
-    border: 1px solid black;
-    display: flex;
-    width: 250px;
-    position: fixed;
-    justify-content: center;
-}
-
-img {
-    width: 200px;
-}
-
-#hid {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-}
-
-.modal_wrapper {
-    position: fixed;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, 0.5);
-} */
-
 @media (max-width: 768px) {
     .text-normal {
         font-size: 12px;
@@ -798,7 +680,6 @@ img {
     .why-us__col.left {
         margin: 0 15px 0 0;
     }
-    /* Базовые стили слоя затемнения и модального окна  */
     .why-us__overlay {
         top: 0;
         right: 0;
@@ -806,25 +687,21 @@ img {
         left: 0;
         z-index: 1;
         visibility: hidden;
-        /* фон затемнения */
         background-color: rgba(0, 0, 0, 0.7);
         opacity: 0;
         position: fixed;
-        /* фиксированное поцизионирование */
         transition: opacity .5s;
     }
     .why-us__overlay:target {
         visibility: visible;
         opacity: 1;
     }
-    /*** Формируем стили модального окна ***/
     .why-us__modal-window {
         font-size: 14px;
         z-index: 10;
         visibility: hidden;
         margin: auto;
         width: 90%;
-        /* фиксированное позиционирование, окно стабильно при прокрутке */
         position: fixed;
         padding: 15px;
         border: none;
@@ -835,15 +712,11 @@ img {
         border-radius: 30px;
         padding: 52px 58px 67px 48px;
     }
-    /* активируем появление окна и затемнение фона */
     .why-us__overlay:target+.why-us__modal-window {
         top: 13%;
-        /* position: absolute; */
-        /* положение окна от верха страницы при появлении */
         visibility: visible;
         opacity: 1;
     }
-    /* формируем кнопку закрытия */
     .why-us__btn-close {
         position: absolute;
         top: 18px;
