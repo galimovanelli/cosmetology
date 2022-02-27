@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/css/docs.theme.min.css">
+    <style>
+        .owl-carousel .item {
+            height: auto;
+            background: transparent;
+            padding: 0;
+            display: flex;
+        }
+        
+        .teachers__head {
+            margin: 136px 0 73px;
+        }
+        
+        .teachers__gallery-cell {
+            width: 100%;
+            height: 540px;
+            margin-right: 10px;
+            background: transparent;
+            counter-increment: teachers__gallery-cell;
+        }
+        
+        .teachers__gallery-cell:before {
+            display: block;
+            text-align: center;
+            line-height: 200px;
+            font-size: 80px;
+            color: #000;
+        }
+        
+        .owl-stage-outer {
+            background-image: url(https://eduexp.ru/wp-content/uploads/2022/02/bgr_for_teachers.png);
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+            height: 537px;
+        }
+        
+        .teachers__gallery {
+            background: transparent;
+        }
+        
+        .teachers__block {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+            border-radius: 30px;
+            width: 581px;
+            margin: 100px 0 107px 51px;
+        }
+        
+        .teachers__head_bloc {
+            padding: 54px 0 39px 0;
+            margin: 0;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: capitalize;
+        }
+        
+        .teachers__ul {
+            padding: 0 66px 52px 81px;
+            margin: 0;
+        }
+        
+        .teachers__img.ekat {
+            margin-left: -84px;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .teachers__gallery-cell.is-selected {
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .teachers__block.second {
+            margin: 119px 52px 119px -27px;
+        }
+        
+        .teachers__img.zulf {
+            z-index: 1;
+            align-self: self-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="teachers__block">
+                <h2 class="teachers__head_bloc text-head-1">Абдрахманова Екатерина Михайловна</h2>
+                <ul class="teachers__ul">
+                    <li class="teachers__li">
+                        главный врач клиники
+                    </li>
+                    <br>
+                    <li class="teachers__li">
+                        врач дерматовенеролог, косметолог, физиотерапевт
+                    </li>
+                    <br>
+                    <li class="teachers__li">
+                        сертифицированный тренер Teoxane, Sisderma, Plasmolifting
+                    </li>
+                </ul>
+            </div>
+            <div class="teachers__img ekat">
+                <img src="https://eduexp.ru/wp-content/uploads/2022/01/teacher_ekaterina.png" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="teachers__img zulf">
+                <img src="https://eduexp.ru/wp-content/uploads/2022/01/director_Zulfia.png" alt="">
+            </div>
+            <div class="teachers__block second">
+                <h2 class="teachers__head_bloc text-head-1">Терентьева Зульфия Махмутовна
+                </h2>
+                <ul class="teachers__ul">
+                    <li class="teachers__li">
+                        директор клиники
+                    </li>
+                    <br>
+                    <li class="teachers__li">
+                        кандидат медицинских наук, врач дерматовенеролог, косметолог со стажем 19 лет
+                    </li>
+                    <br>
+                    <li class="teachers__li">
+                        сертифицированный тренер Teoxane, Sisderma, Plasmolifting
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        items: 1
+    })
+</script>
+
+</html>
