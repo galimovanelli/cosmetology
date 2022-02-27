@@ -68,6 +68,7 @@ body {
 
 .for-whom__head-block {
     color: #3F3A3A;
+    margin-top: 0;
 }
 
 .for-whom__block {
@@ -230,6 +231,10 @@ li.your-skills__li.first.text-head-2 {
     padding: 0;
     display: flex;
     z-index: 0;
+}
+
+.owl-carousel {
+    z-index: 0!important;
 }
 
 .teachers__head {
