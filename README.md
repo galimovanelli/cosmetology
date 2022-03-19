@@ -1,5 +1,5 @@
 ﻿# cosmetology
- ## Сверстанный макет для добавления в шаблон STM LMS Wordpress для образовательной платформы eduexp.ru
+ ## Сверстанная страница для добавления в шаблон STM LMS Wordpress для образовательной платформы eduexp.ru
 
 <b><p>Демо: <a href="https://galimovanelli.github.io/cosmetology/">смотреть</a></p></b>
 
